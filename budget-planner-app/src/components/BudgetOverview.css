@@ -1,0 +1,85 @@
+.budget-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.budget-card {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: all 0.2s;
+}
+
+.budget-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: #d1d5db;
+}
+
+.budget-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.budget-icon {
+  font-size: 1.25rem;
+}
+
+.budget-category {
+  font-weight: 600;
+  color: #111827;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.budget-amounts {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.spent {
+  color: #111827;
+}
+
+.spent.over-budget {
+  color: #ef4444;
+}
+
+.limit {
+  color: #9ca3af;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 0.5rem;
+  background: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 9999px;
+}
+
+.budget-remaining {
+  font-size: 0.875rem;
+}
+
+.remaining-text {
+  color: #059669;
+}
+
+.over-text {
+  color: #ef4444;
+  font-weight: 500;
+}
